@@ -1,0 +1,37 @@
+Padding words,Attack,Model,Spam recall
+0,Generic padding,Naive Bayes,0.9472487001733102
+0,Generic padding,Logistic Regression,0.9874350086655113
+0,Generic padding,MLP,0.9885181975736569
+0,Informed padding,Naive Bayes,0.9472487001733102
+0,Informed padding,Logistic Regression,0.9874350086655113
+0,Informed padding,MLP,0.9885181975736569
+5,Generic padding,Naive Bayes,0.8689341421143848
+5,Generic padding,Logistic Regression,0.8686091854419411
+5,Generic padding,MLP,0.9120450606585788
+5,Informed padding,Naive Bayes,0.7894280762564991
+5,Informed padding,Logistic Regression,0.8456455805892548
+5,Informed padding,MLP,0.8810658578856152
+10,Generic padding,Naive Bayes,0.8230069324090121
+10,Generic padding,Logistic Regression,0.7326689774696707
+10,Generic padding,MLP,0.8371967071057193
+10,Informed padding,Naive Bayes,0.7016897746967071
+10,Informed padding,Logistic Regression,0.6740684575389948
+10,Informed padding,MLP,0.7664644714038128
+20,Generic padding,Naive Bayes,0.753682842287695
+20,Generic padding,Logistic Regression,0.4914428076256499
+20,Generic padding,MLP,0.6792677642980935
+20,Informed padding,Naive Bayes,0.5814558058925476
+20,Informed padding,Logistic Regression,0.393630849220104
+20,Informed padding,MLP,0.544844020797227
+40,Generic padding,Naive Bayes,0.6647530329289428
+40,Generic padding,Logistic Regression,0.2358102253032929
+40,Generic padding,MLP,0.4546143847487002
+40,Informed padding,Naive Bayes,0.4406412478336222
+40,Informed padding,Logistic Regression,0.1621533795493934
+40,Informed padding,MLP,0.2699306759098787
+80,Generic padding,Naive Bayes,0.5592504332755632
+80,Generic padding,Logistic Regression,0.13561525129982668
+80,Generic padding,MLP,0.2571490467937608
+80,Informed padding,Naive Bayes,0.34542894280762565
+80,Informed padding,Logistic Regression,0.07560658578856153
+80,Informed padding,MLP,0.14807192374350087

@@ -1,0 +1,5 @@
+{"source": "scratch demo (same setup as notebook section 9): Logistic Regression, C=10",
+ "fix1_example": {"spam_words": 54, "added_ham_words": 60, "whole_email_score": 0.059,
+                  "pieces": [{"words": 50, "score": 1.0}, {"words": 64, "score": 0.0}], "fix1_threshold": 0.929},
+ "fix2_weights": {"seen_in_training_copies": {"tony": [-6.16, -4.31], "rant": [-5.73, -3.98], "pdf": [-5.18, -3.52]},
+                  "attack_words_not_seen": {"thanks": [-13.94, -15.77], "python": [-6.42, -7.30], "mike": [-4.57, -5.58]}}}

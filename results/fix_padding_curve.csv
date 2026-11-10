@@ -1,0 +1,73 @@
+Padding words,Model,Version,Spam recall
+0,Naive Bayes,Original,0.9472487001733102
+0,Naive Bayes,Fix 1: 50-word pieces,0.7681975736568457
+0,Naive Bayes,Fix 2: random padding,0.9187608318890814
+0,Naive Bayes,Fix 1 + 2,0.7664644714038128
+0,Logistic Regression,Original,0.9874350086655113
+0,Logistic Regression,Fix 1: 50-word pieces,0.8954722703639515
+0,Logistic Regression,Fix 2: random padding,0.9847270363951474
+0,Logistic Regression,Fix 1 + 2,0.8616767764298093
+0,MLP,Original,0.9885181975736569
+0,MLP,Fix 1: 50-word pieces,0.8686091854419411
+0,MLP,Fix 2: random padding,0.9872183708838822
+0,MLP,Fix 1 + 2,0.8530112651646448
+5,Naive Bayes,Original,0.7930025996533796
+5,Naive Bayes,Fix 1: 50-word pieces,0.6690857885615251
+5,Naive Bayes,Fix 2: random padding,0.7433925476603119
+5,Naive Bayes,Fix 1 + 2,0.6617201039861352
+5,Logistic Regression,Original,0.8452123050259965
+5,Logistic Regression,Fix 1: 50-word pieces,0.6312824956672444
+5,Logistic Regression,Fix 2: random padding,0.8160745233968805
+5,Logistic Regression,Fix 1 + 2,0.5809142114384749
+5,MLP,Original,0.88355719237435
+5,MLP,Fix 1: 50-word pieces,0.6199090121317158
+5,MLP,Fix 2: random padding,0.860051993067591
+5,MLP,Fix 1 + 2,0.6212088388214905
+10,Naive Bayes,Original,0.7055892547660312
+10,Naive Bayes,Fix 1: 50-word pieces,0.6265164644714039
+10,Naive Bayes,Fix 2: random padding,0.6511048526863085
+10,Naive Bayes,Fix 1 + 2,0.6178509532062392
+10,Logistic Regression,Original,0.673526863084922
+10,Logistic Regression,Fix 1: 50-word pieces,0.5427859618717504
+10,Logistic Regression,Fix 2: random padding,0.6217504332755632
+10,Logistic Regression,Fix 1 + 2,0.5068240901213171
+10,MLP,Original,0.7687391681109186
+10,MLP,Fix 1: 50-word pieces,0.5266464471403813
+10,MLP,Fix 2: random padding,0.7241117850953206
+10,MLP,Fix 1 + 2,0.5292461005199307
+20,Naive Bayes,Original,0.5810225303292894
+20,Naive Bayes,Fix 1: 50-word pieces,0.5903379549393414
+20,Naive Bayes,Fix 2: random padding,0.5226386481802426
+20,Naive Bayes,Fix 1 + 2,0.5822140381282496
+20,Logistic Regression,Original,0.39417244367417675
+20,Logistic Regression,Fix 1: 50-word pieces,0.5383448873483535
+20,Logistic Regression,Fix 2: random padding,0.33221403812824957
+20,Logistic Regression,Fix 1 + 2,0.5300043327556326
+20,MLP,Original,0.5482019064124783
+20,MLP,Fix 1: 50-word pieces,0.5317374350086655
+20,MLP,Fix 2: random padding,0.4696707105719237
+20,MLP,Fix 1 + 2,0.5336871750433275
+40,Naive Bayes,Original,0.44042461005199307
+40,Naive Bayes,Fix 1: 50-word pieces,0.6190424610051993
+40,Naive Bayes,Fix 2: random padding,0.4053292894280763
+40,Naive Bayes,Fix 1 + 2,0.6124350086655113
+40,Logistic Regression,Original,0.1621533795493934
+40,Logistic Regression,Fix 1: 50-word pieces,0.6116767764298093
+40,Logistic Regression,Fix 2: random padding,0.14059792027729637
+40,Logistic Regression,Fix 1 + 2,0.5917461005199307
+40,MLP,Original,0.2668977469670711
+40,MLP,Fix 1: 50-word pieces,0.6026863084922011
+40,MLP,Fix 2: random padding,0.21479636048526862
+40,MLP,Fix 1 + 2,0.6016031195840554
+80,Naive Bayes,Original,0.34380415944540726
+80,Naive Bayes,Fix 1: 50-word pieces,0.6292244367417678
+80,Naive Bayes,Fix 2: random padding,0.308817157712305
+80,Naive Bayes,Fix 1 + 2,0.6229419410745234
+80,Logistic Regression,Original,0.07484835355285963
+80,Logistic Regression,Fix 1: 50-word pieces,0.6128682842287695
+80,Logistic Regression,Fix 2: random padding,0.03845320623916811
+80,Logistic Regression,Fix 1 + 2,0.5927209705372617
+80,MLP,Original,0.1479636048526863
+80,MLP,Fix 1: 50-word pieces,0.6010615251299827
+80,MLP,Fix 2: random padding,0.11265164644714037
+80,MLP,Fix 1 + 2,0.6016031195840554

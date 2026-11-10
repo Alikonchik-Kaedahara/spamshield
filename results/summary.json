@@ -1,0 +1,448 @@
+{
+ "datasets": {
+  "raw": {
+   "Ham": {
+    "CEAS 2008": 17312,
+    "Enron-Spam": 16545,
+    "TREC 2005": 39399,
+    "All": 73256
+   },
+   "Spam": {
+    "CEAS 2008": 21842,
+    "Enron-Spam": 17171,
+    "TREC 2005": 52790,
+    "All": 91803
+   },
+   "Total": {
+    "CEAS 2008": 39154,
+    "Enron-Spam": 33716,
+    "TREC 2005": 92189,
+    "All": 165059
+   }
+  },
+  "clean": {
+   "Ham": {
+    "CEAS 2008": 17134,
+    "Enron-Spam": 12460,
+    "TREC 2005": 31714,
+    "All": 61308
+   },
+   "Spam": {
+    "CEAS 2008": 18652,
+    "Enron-Spam": 13763,
+    "TREC 2005": 29127,
+    "All": 61542
+   },
+   "Total": {
+    "CEAS 2008": 35786,
+    "Enron-Spam": 26223,
+    "TREC 2005": 60841,
+    "All": 122850
+   }
+  }
+ },
+ "cleaning_steps": [
+  {
+   "Step": "Raw emails",
+   "Emails": 165059
+  },
+  {
+   "Step": "After removing empty / <3 words",
+   "Emails": 161804
+  },
+  {
+   "Step": "After removing conflicting labels",
+   "Emails": 161666
+  },
+  {
+   "Step": "After removing duplicates (final)",
+   "Emails": 122850
+  }
+ ],
+ "split": {
+  "Emails": {
+   "Train": 85995,
+   "Validation": 18427,
+   "Test": 18428
+  },
+  "Spam share": {
+   "Train": 0.501,
+   "Validation": 0.501,
+   "Test": 0.501
+  }
+ },
+ "tfidf_features": 50000,
+ "best_alpha": 0.001,
+ "best_C": 10.0,
+ "best_hidden": 64,
+ "mlp_best_epoch": 4,
+ "nb_grid": [
+  {
+   "alpha": 0.001,
+   "val_F1": 0.9657773586998725
+  },
+  {
+   "alpha": 0.01,
+   "val_F1": 0.9652839396628217
+  },
+  {
+   "alpha": 0.1,
+   "val_F1": 0.9643826510829225
+  },
+  {
+   "alpha": 0.5,
+   "val_F1": 0.963716814159292
+  },
+  {
+   "alpha": 1.0,
+   "val_F1": 0.9628032940916377
+  }
+ ],
+ "lr_grid": [
+  {
+   "C": 0.1,
+   "val_F1": 0.9674862070812577
+  },
+  {
+   "C": 1.0,
+   "val_F1": 0.9808615019677611
+  },
+  {
+   "C": 10.0,
+   "val_F1": 0.9847584044968112
+  },
+  {
+   "C": 100.0,
+   "val_F1": 0.9829628427713776
+  }
+ ],
+ "mlp_runs": {
+  "64": {
+   "best_epoch": 4,
+   "val_F1": 0.9868570501379198,
+   "time": 46.47761821746826,
+   "history": [
+    {
+     "epoch": 1,
+     "train_loss": 0.044615861028432846,
+     "train_F1": 0.9897294094410428,
+     "val_loss": 0.057839978486299515,
+     "val_F1": 0.9830710151982259
+    },
+    {
+     "epoch": 2,
+     "train_loss": 0.020877456292510033,
+     "train_F1": 0.9957985270129999,
+     "val_loss": 0.04299284517765045,
+     "val_F1": 0.9862613587191692
+    },
+    {
+     "epoch": 3,
+     "train_loss": 0.011872370727360249,
+     "train_F1": 0.9979232594936709,
+     "val_loss": 0.039136406034231186,
+     "val_F1": 0.9866291344123856
+    },
+    {
+     "epoch": 4,
+     "train_loss": 0.007835145108401775,
+     "train_F1": 0.998813056379822,
+     "val_loss": 0.03808995336294174,
+     "val_F1": 0.9868570501379198
+    },
+    {
+     "epoch": 5,
+     "train_loss": 0.005528691690415144,
+     "train_F1": 0.9992577564451482,
+     "val_loss": 0.03873351961374283,
+     "val_F1": 0.9866160931996749
+    },
+    {
+     "epoch": 6,
+     "train_loss": 0.004339050035923719,
+     "train_F1": 0.999406116994952,
+     "val_loss": 0.03974706679582596,
+     "val_F1": 0.9866738894907909
+    }
+   ]
+  },
+  "128": {
+   "best_epoch": 3,
+   "val_F1": 0.986417013907679,
+   "time": 82.98984003067017,
+   "history": [
+    {
+     "epoch": 1,
+     "train_loss": 0.03207753971219063,
+     "train_F1": 0.9923483240361357,
+     "val_loss": 0.049210913479328156,
+     "val_F1": 0.9844806142864868
+    },
+    {
+     "epoch": 2,
+     "train_loss": 0.013999487273395061,
+     "train_F1": 0.9974282888229475,
+     "val_loss": 0.04012719541788101,
+     "val_F1": 0.9866926322622526
+    },
+    {
+     "epoch": 3,
+     "train_loss": 0.007453956641256809,
+     "train_F1": 0.9989117530668777,
+     "val_loss": 0.038722921162843704,
+     "val_F1": 0.986417013907679
+    },
+    {
+     "epoch": 4,
+     "train_loss": 0.00504189170897007,
+     "train_F1": 0.9992084693776591,
+     "val_loss": 0.03899203613400459,
+     "val_F1": 0.9866969500324465
+    },
+    {
+     "epoch": 5,
+     "train_loss": 0.0036553393583744764,
+     "train_F1": 0.9994556880597754,
+     "val_loss": 0.040923621505498886,
+     "val_F1": 0.9863949265542847
+    }
+   ]
+  },
+  "256": {
+   "best_epoch": 2,
+   "val_F1": 0.9865873445105462,
+   "time": 131.99844789505005,
+   "history": [
+    {
+     "epoch": 1,
+     "train_loss": 0.023569149896502495,
+     "train_F1": 0.9943709263282638,
+     "val_loss": 0.0444255992770195,
+     "val_F1": 0.9850859180806225
+    },
+    {
+     "epoch": 2,
+     "train_loss": 0.009778106585144997,
+     "train_F1": 0.9981203007518797,
+     "val_loss": 0.03946775197982788,
+     "val_F1": 0.9865873445105462
+    },
+    {
+     "epoch": 3,
+     "train_loss": 0.004770549014210701,
+     "train_F1": 0.9992578298946119,
+     "val_loss": 0.03979036957025528,
+     "val_F1": 0.9867908185361628
+    },
+    {
+     "epoch": 4,
+     "train_loss": 0.0035720320884138346,
+     "train_F1": 0.9994062345373578,
+     "val_loss": 0.04139723256230354,
+     "val_F1": 0.9868022501081782
+    }
+   ]
+  }
+ },
+ "size_curve": [
+  {
+   "Model": "Naive Bayes",
+   "Training emails": 4299,
+   "Train F1": 0.992633517495396,
+   "Validation F1": 0.9425352431636754
+  },
+  {
+   "Model": "Logistic Regression",
+   "Training emails": 4299,
+   "Train F1": 0.9997705895847672,
+   "Validation F1": 0.9635962789697263
+  },
+  {
+   "Model": "MLP",
+   "Training emails": 4299,
+   "Train F1": 0.9940339605323543,
+   "Validation F1": 0.9621478873239436
+  },
+  {
+   "Model": "Naive Bayes",
+   "Training emails": 8599,
+   "Train F1": 0.9856855554241097,
+   "Validation F1": 0.9505707698363606
+  },
+  {
+   "Model": "Logistic Regression",
+   "Training emails": 8599,
+   "Train F1": 0.9995318352059925,
+   "Validation F1": 0.9731532791736159
+  },
+  {
+   "Model": "MLP",
+   "Training emails": 8599,
+   "Train F1": 0.9945099871510338,
+   "Validation F1": 0.9733955912694103
+  },
+  {
+   "Model": "Naive Bayes",
+   "Training emails": 21498,
+   "Train F1": 0.9747515572250487,
+   "Validation F1": 0.9591107138867165
+  },
+  {
+   "Model": "Logistic Regression",
+   "Training emails": 21498,
+   "Train F1": 0.9981796966161027,
+   "Validation F1": 0.9774038720811088
+  },
+  {
+   "Model": "MLP",
+   "Training emails": 21498,
+   "Train F1": 0.9976216014550203,
+   "Validation F1": 0.9795896269828379
+  },
+  {
+   "Model": "Naive Bayes",
+   "Training emails": 42997,
+   "Train F1": 0.9735437237208863,
+   "Validation F1": 0.9635393508225878
+  },
+  {
+   "Model": "Logistic Regression",
+   "Training emails": 42997,
+   "Train F1": 0.998514460795692,
+   "Validation F1": 0.9823840916459526
+  },
+  {
+   "Model": "MLP",
+   "Training emails": 42997,
+   "Train F1": 0.9984453674269671,
+   "Validation F1": 0.98408229561451
+  },
+  {
+   "Model": "Naive Bayes",
+   "Training emails": 85995,
+   "Train F1": 0.9704321097121239,
+   "Validation F1": 0.9657773586998725
+  },
+  {
+   "Model": "Logistic Regression",
+   "Training emails": 85995,
+   "Train F1": 0.995975271698157,
+   "Validation F1": 0.9847584044968112
+  },
+  {
+   "Model": "MLP",
+   "Training emails": 85995,
+   "Train F1": 0.9989442543070943,
+   "Validation F1": 0.9868008222438602
+  }
+ ],
+ "spam_words": [
+  "rolex",
+  "viagra",
+  "pills",
+  "watches",
+  "prescription",
+  "replica",
+  "sex",
+  "thousand",
+  "adobe",
+  "cable",
+  "men",
+  "shipping",
+  "professional",
+  "stocks",
+  "php",
+  "featured",
+  "popular",
+  "women",
+  "guaranteed",
+  "living",
+  "health",
+  "seek",
+  "dollars",
+  "aug",
+  "life",
+  "watch",
+  "perfect",
+  "settings",
+  "love",
+  "man",
+  "identified",
+  "statements",
+  "express",
+  "money",
+  "quality",
+  "act",
+  "advice",
+  "video",
+  "safe",
+  "store",
+  "securities",
+  "save",
+  "offers",
+  "huge",
+  "partners",
+  "stop",
+  "investment",
+  "respect",
+  "fast",
+  "country"
+ ],
+ "ham_words": [
+  "tangomu",
+  "opensuse",
+  "dev",
+  "kaminski",
+  "python",
+  "louise",
+  "fyi",
+  "wrote",
+  "listinfo",
+  "attachments",
+  "mailman",
+  "greg",
+  "steve",
+  "forwarded",
+  "scott",
+  "bob",
+  "hou",
+  "jim",
+  "draft",
+  "jeff",
+  "discussed",
+  "probably",
+  "mike",
+  "privileged",
+  "oct",
+  "chris",
+  "joe",
+  "summary",
+  "posted",
+  "houston"
+ ],
+ "touched_share": 0.6664861351819757,
+ "n_test_spam": 9232,
+ "pool_size": 467,
+ "pool_examples": [
+  "zvllln",
+  "estoppel",
+  "ees",
+  "counterparty",
+  "smsbmo",
+  "ena",
+  "mmbtu",
+  "enforceable",
+  "steffes",
+  "uai",
+  "transwestern",
+  "counterparties",
+  "enrononline",
+  "perl",
+  "hpl",
+  "rossum",
+  "sitara",
+  "epmi",
+  "daren",
+  "nng"
+ ]
+}
